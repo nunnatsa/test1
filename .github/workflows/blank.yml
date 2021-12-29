@@ -11,8 +11,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
-  if: (github.event.issue.pull_request) && (contains(github.event.comment.body, '/rebase'))
-    # The type of runner that the job will run on
+    if: (github.event.issue.pull_request) && (contains(github.event.comment.body, '/rebase'))
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
